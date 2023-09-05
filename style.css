@@ -1,0 +1,145 @@
+@import url('https://fonts.cdnfonts.com/css/noto-sans-rejang');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #333;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Noto Sans Rejang', arial;
+}
+
+nav {
+    height: 100%;
+    /*background-image: url("images/imageprincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #b2d3bc;
+    padding: 20px;
+
+}
+
+#nav-bar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 75px;
+}
+
+#nav-bar>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar>ul>li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.soulignage {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    /* Couleur du texte de base */
+}
+
+.soulignage::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Ajustez la valeur pour définir l'épaisseur du soulignage */
+    width: 100%;
+    height: 3px;
+    /* Ajustez la valeur pour définir l'épaisseur du soulignage */
+    background-color: #ffffff;
+    /* Couleur du soulignage */
+    transform: scaleX(0);
+    /* L'animation commence avec une largeur de 0 */
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    /* La transition crée l'effet d'animation */
+}
+
+/* Animation du soulignage au survol */
+.soulignage:hover::after {
+    transform: scaleX(1);
+    /* Le soulignage s'élargit jusqu'à la largeur du texte */
+}
+
+/*changer le style du scroll*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b2d3bc;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+#img-presentation {
+    margin: 30px;
+    height : 450px;
+
+}
+
+/*animation*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Déplacer vers le bas au départ */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Revenir à la position initiale */
+    }
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out;
+    /* Nom de l'animation, durée, ralentissement */
+}
+
+#presentation{
+    display: flex;
+    flex-direction : row;
+    /*justify-content: space-around;*/
+}
+
+#presentation-texte{
+    display: flex;
+    flex-direction : column;
+}
+
+h2{
+    font-size: 60px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.Presentation-para{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+}
