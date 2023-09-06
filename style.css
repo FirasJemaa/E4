@@ -90,7 +90,7 @@ nav {
 
 #img-presentation {
     margin: 30px;
-    height : 450px;
+    height: 450px;
 
 }
 
@@ -114,26 +114,26 @@ nav {
     /* Nom de l'animation, durée, ralentissement */
 }
 
-#presentation{
+#presentation {
     display: flex;
-    flex-direction : row;
-    /*justify-content: space-around;*/
+    flex-direction: row;
+    justify-content: center;
 }
 
-#presentation-texte{
+#presentation-texte {
     display: flex;
-    flex-direction : column;
+    flex-direction: column;
 }
 
-h2{
+h2 {
     font-size: 60px;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
-.Presentation-para{
+.Presentation-para {
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
@@ -142,4 +142,63 @@ p{
     flex-direction: row;
     justify-content: center;
     padding-top: 2%;
+}
+
+/*animation scroll*/
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#sectionPresentation {
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    width: 200px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: #333;
+    z-index: 0;
+    border: 3px solid #b2d3bc;
+    background: whitesmoke;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b2d3bc;
+    border-radius: 50% 50% 0% 0%;
+    z-index: -1;
+    transition: all .5s;
+}
+
+a:hover::before {
+    top: 0px;
+    border-radius: 0;
 }
