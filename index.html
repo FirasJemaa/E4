@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -29,7 +28,9 @@
                 </button>
                 <div class="navlinks-container">
                     <a class="soulignage" href="#" aria-current="page">Présentation</a>
-                    <a class="soulignage" href="#">Compétence</a>
+                    <a class="soulignage" href="#">Connaissances</a>
+                    <a class="soulignage" href="#">Formation</a>
+                    <a class="soulignage" href="#">Contact</a>
                     <a class="soulignage" href="#">Veille technologique</a>
                     <a class="soulignage" href="#">Projet</a>
                     <a class="soulignage" href="#">Contact</a>
@@ -125,6 +126,76 @@
         </div>
 
     </section>
+
+    <!-- Top btn-->
+    <div id="topButton">
+        <i id="arrow" class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- Formation -->
+    <section id="formation">
+        <h1 class="soulignage reveal">Formation</h1>
+        <div class="box-timeline">
+            <div class="ligne"></div>
+
+            <div class="rond r1" data-anim="1">2015</div>
+            <div class="rond r2" data-anim="2">2017</div>
+            <div class="rond r3" data-anim="3">2018</div>
+            <div class="rond r4" data-anim="4">2022</div>
+
+
+            <div class="box b1" data-anim="1">
+                <h2>Baccalauréat Pro SEN</h2>
+                <p><strong>Lycée Montésquieu - Sorgues</strong><br/>
+                    Système Electronique et Numérique. Obtenu avec montion Assez Bien
+                </p>
+                <a class="btn">2015 - 2017</a>
+            </div>
+            <div class="box b2" data-anim="2">
+                <h2>BTS SIO</h2>
+                <p><strong>Service Informatique aux Organisations - Avignon</strong><br/>
+                    1ière année
+                </p>
+                <a class="btn">2017 - 2018</a>
+            </div>
+            <div class="box b3" data-anim="3">
+                <h2>Université</h2>
+                <p><strong>Univeristé - Avignon</strong><br/>
+                    1ière année
+                </p>
+                <a class="btn">2018 - 2019</a>
+            </div>
+            <div class="box b4" data-anim="4">
+                <h2>BTS SIO</h2>
+                <p><strong>Service Informatique aux Organisations - IFC - Avignon</strong><br/>
+                En cours ... (en Alternance)</p>
+                <a class="btn">2022 - 2024</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="column container">
+        <h1 class="soulignage reveal">Contact</h1>       
+        <div  id="Contact" class="row">
+            <div>
+                <div class="card" style="margin : 50px;">
+                    <h3><i class="fa-solid fa-mobile"></i> +33 6 51 28 80 75</h3>
+                    <h3><i class="fa-solid fa-envelope"></i> firas.jemaa@yahoo.fr</h3>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.572307912419!2d4.814709076290871!3d43.94752433334495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed5307ee6a1b%3A0xffad761489e7f8d7!2sMarengo!5e0!3m2!1sfr!2sfr!4v1694367059376!5m2!1sfr!2sfr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section> 
+   
+    
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 
