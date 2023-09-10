@@ -2,40 +2,129 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefolio</title>
-    <link rel="stylesheet" href="style.css">
-    </link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <nav>
-        <div id="nav-bar">
-            <h1 class="soulignage">Firas Jemaa</h1>
-            <ul>
-                <li class="soulignage">Connaissances</li>
-                <li class="soulignage">Veille technologique</li>
-                <li class="soulignage">Options</li>
-            </ul>
+    <header>
+        <nav>
+            <a href="#" class="nav-icon " aria-label="homepage" aria-current="page">
+                <span class="animated-Top">Firas Jemaa</span>
+            </a>
+
+            <div class="main-navlinks">
+                <button type="button" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navlinks-container">
+                    <a class="soulignage" href="#" aria-current="page">Présentation</a>
+                    <a class="soulignage" href="#">Compétence</a>
+                    <a class="soulignage" href="#">Veille technologique</a>
+                    <a class="soulignage" href="#">Projet</a>
+                    <a class="soulignage" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row container animated-Left">
+            <div class="column">
+                <h2 class="soulignage">Bonjour !</h2>
+                <br>
+                <p>
+                    Je m'appelle Firas est je suis en BTS SIO, à l'IFC d'Avignon
+                </p>
+            </div>
+            <img class="animated-Right svg-tall" id="img-presentation" src="images/img_presentation.svg"
+                alt="Description de l'image">
         </div>
-        <div id="presentation" class="animated-element">
-            <img id="img-presentation" src="images/img_presentation.svg" alt="Description de l'image">
-            <div id="presentation-texte">
-                <h2 class="soulignage">Bonjour !</h1>
-                <p id="bottom-item">Je m'appelle Firas est je suis en BTS SIO, à l'IFC d'Avignon</p>
+    </header>
+
+    <!--Section présentation-->
+    <section class="column container">
+        <h1 class="soulignage reveal">Présentation</h1>
+        <div class="row">
+            <div class="column">
+                <p style="padding: 50px;">Passionné par l’informatique et attiré par la programmation,
+                    j'ai choisi l'option SLAM <br> en alternance pour allier théorie et pratique.
+
+                </p><a id="CV" href="CV_Jemaa_Firas.pdf" download="CV_Jemaa_Firas.pdf">CV et LM</a>
+            </div>
+            <img class="svg-small" src="images/undraw_mic_drop_uuyg.svg" alt="moi">
+        </div>
+    </section>
+
+    <!--Section Connaissance-->
+    <section class="column container">
+        <h1 class="soulignage reveal">Connaissances</h1>
+        <h2 class="soulignage">Client-Leger</h2>
+
+        <div id="Client-Leger">
+            <div class="langage">
+                <img src="images/html.png" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div class="langage">
+                <img src="images/CSS.png" alt="css">
+                <h3>CSS</h3>
+            </div>
+            <div class="langage">
+                <img src="images/sass.png" alt="cass">
+                <h3>SASS</h3>
+            </div>
+            <div class="langage">
+                <img src="images/js.png" alt="javascript">
+                <h3>Javascript</h3>
+            </div>
+            <div class="langage">
+                <img src="images/php.png" alt="php">
+                <h3>PHP</h3>
+            </div>
+            <div class="langage"><img src="images/jQuery.png" alt="sQuery">
+                <h3>jQuery</h3>
             </div>
         </div>
-    </nav>
 
-    <h2 class="Presentation-para reveal">Présentation</h2>
-    <div id="sectionPresentation">
-        <p style="padding-bottom: 500px;">Passionné par l’informatique et attiré par la programmation,
-            j'ai choisi l'option SLAM <br> en alternance pour allier théorie et pratique.
-            <br><a href="#">Wow ça swing !</a>
-        </p>
-        <img id="img-presentation" src="images/undraw_mic_drop_uuyg.svg" alt="moi">
-    </div>
+        <h2 class="soulignage">Client-Lourd</h2>
+
+        <div id="Client-Leger">
+            <div class="langage">
+                <img src="images/python.png" alt="html">
+                <h3>Python</h3>
+            </div>
+            <div class="langage">
+                <img src="images/C.png" alt="css">
+                <h3>C#</h3>
+            </div>
+            <div class="langage">
+                <img src="images/pcsoft.svg" alt="pcsoft">
+                <h3>PC Soft</h3>
+            </div>
+        </div>
+
+        <h2 class="soulignage">Autre</h2>
+
+        <div id="Client-Leger">
+            <div class="langage">
+                <img src="images/sql.png" alt="html">
+                <h3>SQL</h3>
+            </div>
+            <div class="langage">
+                <img src="images/api.png" alt="css">
+                <h3>API</h3>
+            </div>
+        </div>
+
+    </section>
     <script src="script.js"></script>
 </body>
 
