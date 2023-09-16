@@ -381,7 +381,6 @@ nav {
     height: 100px;
 }
 
-
 /* formation */
 #formation h1{
     text-align: center;
@@ -513,6 +512,15 @@ nav {
     transform: rotate(360deg);
 }
 
+/* Entreprise  */
+#style_Text_Entreprise {
+    text-align: justify;
+}
+
+#style_Text_Entreprise > span{
+    color: #0077b5;
+}
+
 /* Contact */
 iframe{
     border-radius: 5px;
@@ -586,16 +594,6 @@ textarea {
     display: flexbox;
     flex-direction: column;
     align-items: flex-start;
-}
-
-/* Entreprise   <span>CpaGestion</span>*/
-#style_Text_Entreprise {
-    text-align: justify;
-    color : red;
-}
-
-#style_Text_Entreprise > span{
-    color: #0077b5;
 }
 
 @media (max-width: 900px) {

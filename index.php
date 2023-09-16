@@ -220,7 +220,6 @@ function test_input($data)
             </div>
         </div>
     </section>
-
     <!--Entreprise-->
     <section id="Entreprise" class="column container">
         <h1 class="soulignage reveal">Entreprise</h1>
@@ -235,7 +234,6 @@ function test_input($data)
             </p>
         </div>
     </section>
-
     <!--Contact-->
     <section id="contact" class="column container">
         <h1 class="soulignage reveal">Contact</h1>

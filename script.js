@@ -52,9 +52,7 @@ const allBoxes = document.querySelectorAll('.box');
 const controller = new ScrollMagic.Controller()
 
 allBoxes.forEach(box => {
-
   for (i = 0; i < allRonds.length; i++) {
-
     if (allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim')) {
       let tween = gsap.from(box, { y: -50, opacity: 0, duration: 0.5 })
 
@@ -74,11 +72,9 @@ function TopScroll() {
   let BtnScrollTop = document.getElementById('topButton');
     
   if (window.scrollY > 200){
-    console.log("ca marche");
     BtnScrollTop.style.visibility ="visible";
   }else{
     BtnScrollTop.style.visibility ="hidden";
-    console.log(window.scrollY);
   }
 };
 
