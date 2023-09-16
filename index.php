@@ -1,4 +1,5 @@
 <?php
+
 // Définissez les variables vides pour stocker les données du formulaire
 $nom = $email = $message = "";
 $erreur = "";
@@ -11,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = test_input($_POST["message"]);
 
     // Vérifiez si l'e-mail est valide
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/^[A-Za-z]+$/', $nom)) {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match('/^[A-Za-z]+$/', $nom)) {
         $erreur = "L'adresse e-mail ou le nom ne sont pas valide.";
     } else {
         // Adresse e-mail de destination
@@ -223,33 +224,35 @@ function test_input($data)
     <!--Contact-->
     <section id="contact" class="column container">
         <h1 class="soulignage reveal">Contact</h1>
-        <div class="row">
-            <h2>Contactez-moi</h2>
-            <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required><br><br>
+        <div id="Contact">
+            <div class="row">
+                <h2>Contactez-moi !</h2>
+                <form class="column" method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
 
-                <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-                <input type="submit" name="submit" value="Envoyer">
-            </form>
+                    <input id="CV" type="submit" name="submit" value="Envoyer">
+                </form>
 
-            <p><span class="erreur"><?php echo $erreur; ?></span></p>
-        </div>
-        <div id="Contact" class="row">
-            <div>
-                <div class="card" style="margin : 50px;">
-                    <h3><i class="fa-solid fa-mobile"></i> +33 6 51 28 80 75</h3>
-                    <h3><i class="fa-solid fa-envelope"></i> firas.jemaa@yahoo.fr</h3>
-                </div>
+                <p><span class="erreur"><?php echo $erreur; ?></span></p>
             </div>
-            <div class="column">
-                <h3>Adresse</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.572307912419!2d4.814709076290871!3d43.94752433334495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed5307ee6a1b%3A0xffad761489e7f8d7!2sMarengo!5e0!3m2!1sfr!2sfr!4v1694367059376!5m2!1sfr!2sfr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row">
+                <div>
+                    <div class="card" style="margin : 50px;">
+                        <h3><i class="fa-solid fa-mobile"></i> +33 6 51 28 80 75</h3>
+                        <h3><i class="fa-solid fa-envelope"></i> firas.jemaa@yahoo.fr</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Adresse</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.572307912419!2d4.814709076290871!3d43.94752433334495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed5307ee6a1b%3A0xffad761489e7f8d7!2sMarengo!5e0!3m2!1sfr!2sfr!4v1694367059376!5m2!1sfr!2sfr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </section>
