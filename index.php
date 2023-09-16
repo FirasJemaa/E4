@@ -225,8 +225,15 @@ function test_input($data)
     <section id="Entreprise" class="column container">
         <h1 class="soulignage reveal">Entreprise</h1>
         <h2>CPA Gestion</h2>
-        <img src="images/logo_cpa.png" alt="cpa">
-        <p></p>
+        <div class="row">
+            <img class="svg-small" src="images/entreprise.svg" alt="cpa">
+            <p id="style_Text_Entreprise">
+                <span>CpaGestion</span> est une entreprise qui vends des logiciels de gestion interfacé en temps réel avec Sage (progiciel de gestion intégré). 
+                A partir d'un cachier des charges, nous devons créer un logiciel fait sur mesure pour chaque client. <span>CpaGestion</span> m'a permit de comprendre
+                en tant que développeur je serais pas limité à l'informatique, chez <span>CpaGestion</span> nous devons connaître chaque coeur de métier qu'on rencontre.
+                Collaborer à l'élaboration de nouveaux projets et communiquer au sein de l'équipe pour garantir un bon partage d'informations.
+            </p>
+        </div>
     </section>
 
     <!--Contact-->

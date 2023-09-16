@@ -588,6 +588,14 @@ textarea {
     align-items: flex-start;
 }
 
+/* Entreprise */
+#style_Text_Entreprise {
+    text-align: justify;
+}
+
+#style_Text_Entreprise> span{
+    color: #0077b5;
+}
 
 @media (max-width: 900px) {
     nav {
