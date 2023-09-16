@@ -79,7 +79,7 @@ function test_input($data)
                     <a class="soulignage" href="#presentation" aria-current="page">Présentation</a>
                     <a class="soulignage" href="#connaissance">Connaissances</a>
                     <a class="soulignage" href="#formation">Formation</a>
-                    <a class="soulignage" href="#">Entreprise</a>
+                    <a class="soulignage" href="#Entreprise">Entreprise</a>
                     <a class="soulignage" href="#contact">Contact</a>
                     <a class="soulignage" href="#">Veille technologique</a>
                     <a class="soulignage" href="#">Projet</a>
@@ -221,13 +221,21 @@ function test_input($data)
         </div>
     </section>
 
+    <!--Entreprise-->
+    <section id="Entreprise" class="column container">
+        <h1 class="soulignage reveal">Entreprise</h1>
+        <h2>CPA Gestion</h2>
+        <img src="images/logo_cpa.png" alt="cpa">
+        <p></p>
+    </section>
+
     <!--Contact-->
     <section id="contact" class="column container">
         <h1 class="soulignage reveal">Contact</h1>
         <div id="Contact">
             <div class="row">
-                <h2>Contactez-moi !</h2>
-                <form class="column" method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+                <h2 class="soulignage">Contactez-moi !</h2>
+                <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" required><br><br>
 
@@ -248,8 +256,8 @@ function test_input($data)
                         <h3><i class="fa-solid fa-mobile"></i> +33 6 51 28 80 75</h3>
                         <h3><i class="fa-solid fa-envelope"></i> firas.jemaa@yahoo.fr</h3>
                         <div id="Link_Social">
-                        <a href="https://github.com/FirasJemaa" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/firas-jemaa-963336151/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/FirasJemaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/firas-jemaa-963336151/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

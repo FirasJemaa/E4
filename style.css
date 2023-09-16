@@ -582,6 +582,11 @@ textarea {
     color: #0077b5;
 }
 
+#Contact form{
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
 @media (max-width: 900px) {
