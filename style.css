@@ -588,12 +588,13 @@ textarea {
     align-items: flex-start;
 }
 
-/* Entreprise */
+/* Entreprise   <span>CpaGestion</span>*/
 #style_Text_Entreprise {
     text-align: justify;
+    color : red;
 }
 
-#style_Text_Entreprise> span{
+#style_Text_Entreprise > span{
     color: #0077b5;
 }
 
