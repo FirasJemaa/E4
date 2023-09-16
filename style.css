@@ -563,6 +563,26 @@ textarea {
     color: red;
 }
 
+#Link_Social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#Link_Social > a{
+    color: var(--clr-police);
+    font-size: 50px;
+    margin: 10px;
+}
+#Link_Social > a:nth-child(1) > i{
+    color: black;
+/*    border-radius: 50%;
+    background-color: white;*/
+}
+#Link_Social > a:nth-child(2) > i{
+    color: #0077b5;
+}
+
+
 
 @media (max-width: 900px) {
     nav {

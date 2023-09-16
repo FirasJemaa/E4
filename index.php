@@ -247,6 +247,10 @@ function test_input($data)
                     <div class="card" style="margin : 50px;">
                         <h3><i class="fa-solid fa-mobile"></i> +33 6 51 28 80 75</h3>
                         <h3><i class="fa-solid fa-envelope"></i> firas.jemaa@yahoo.fr</h3>
+                        <div id="Link_Social">
+                        <a href="https://github.com/FirasJemaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/firas-jemaa-963336151/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
