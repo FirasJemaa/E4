@@ -234,6 +234,72 @@ function test_input($data)
             </p>
         </div>
     </section>
+     <!--Projet-->
+     <div class="cards">
+        <h1 class="soulignage reveal">Formation</h1>
+        <div class="card__container">
+
+            <article class="card__article">
+                <img src="./images/landscape-1.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Projet BTS</span>
+                    <h2 class="card__title">Site web</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="./images/landscape-2.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Projet BTS</span>
+                    <h2 class="card__title">Application web</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="./images/landscape-3.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">CPA Gestion</span>
+                    <h2 class="card__title">Altern'agri</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="./images/landscape-4.jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">CPA Gestion</span>
+                    <h2 class="card__title">La chaumière</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="./images/landscape-5.jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Projet personnel</span>
+                    <h2 class="card__title">Weather</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="./images/landscape-6.jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Projet personnel</span>
+                    <h2 class="card__title">Association Don d'espoir</h2>
+                    <a href="#" class="card__button">Voir plus</a>
+                </div>
+            </article>
+        </div>
+    </div>
     <!--Contact-->
     <section id="contact" class="column container">
         <h1 class="soulignage reveal">Contact</h1>
