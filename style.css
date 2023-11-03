@@ -1,15 +1,17 @@
-/*************Police*************************/
-@import url('https://fonts.cdnfonts.com/css/noto-sans-rejang');
+/*************Police************************
+@import url('https://fonts.cdnfonts.com/css/noto-sans-rejang');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*************Variable Couleur**************/
 :root {
-    --clr-first: #96B6C5;
+    --clr-first: #54468f;/*#96B6C5;*/
     --clr-second: #DDE6ED;
-    --clr-police: #27374D;
+    --clr-police: #E5E4E9;/*#27374D;*/
     --clr-background: #ADC4CE;
     /*--clr-nouveau: rgba(0, 0, 0, 0.65);*/
     --container-width: 1000px;
     --container-padding: 20px;
+    --border-radius: 1.5rem;
 }
 
 @media screen and (min-width: 1120px) {
@@ -181,8 +183,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans Rejang', arial;
-    background: var(--clr-background);
+    font-family: 'Poppins', arial; /*'Noto Sans Rejang'*/
+    background: linear-gradient(to left top, #031A9A, #8B53FF);/*var(--clr-background);*/
     color: var(--clr-police);
     height: 100%;
 }
@@ -265,7 +267,7 @@ nav {
     min-width: 90px;
     padding: 10px 5px;
     margin: 0 5px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     border: none;
 }
@@ -333,7 +335,7 @@ nav {
     width: 100%;
     height: 100%;
     background: var(--clr-second);
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     z-index: -1;
     transition: all .5s;
 }
@@ -354,7 +356,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius:var(--border-radius);
     margin: 15px;
 }
 
@@ -375,7 +377,7 @@ nav {
 .langage {
     border: 1px solid var(--clr-second);
     background-color: var(--clr-second);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +463,7 @@ nav {
     width: 400px;
     min-height: 200px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius:var(--border-radius);
     height: auto;
     background: whitesmoke;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -504,7 +506,7 @@ nav {
     text-align: center;
     color: #f1f1f1;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     margin-top: 10px;
 }
 
@@ -528,10 +530,10 @@ nav {
 }
 
 #arrow {
-    color: var(--clr-second);
-    background-color: var(--clr-police);
+    color: var(--clr-first);/*--clr-second*/
+    background-color: var(--clr-second);/*--clr-police*/
     padding: 20px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 
     transition: all ease-in-out 0.3s;
 }
@@ -539,7 +541,7 @@ nav {
 #arrow:hover {
 
     background-color: var(--clr-first);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transform: rotate(360deg);
 }
 
@@ -554,13 +556,13 @@ nav {
 
 /* Contact */
 iframe {
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 #Contact {
     padding: 30px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background-color: var(--clr-first);
 }
 
@@ -581,7 +583,7 @@ textarea {
     padding: 10px;
 
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     font-size: 16px;
 }
 
@@ -591,7 +593,7 @@ textarea {
     margin-bottom: 50px;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius:var(--border-radius);
     cursor: pointer;
 }
 
@@ -659,7 +661,7 @@ textarea {
 
 .card__img {
     width: 328px;
-    border-radius: 1.5rem;
+    border-radius: var(--border-radius);
 }
 
 .card__data {
@@ -667,7 +669,7 @@ textarea {
     background-color: white;
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
+    border-radius:var(--border-radius);
     position: absolute;
     bottom: -9rem;
     left: 0;
@@ -679,6 +681,7 @@ textarea {
 
 .card__description {
     display: block;
+    color: var(--clr-first);
     font-size: var(--small-font-size);
     margin-bottom: .25rem;
 }

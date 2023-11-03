@@ -192,9 +192,9 @@ function test_input($data)
 
 
             <div class="box b1" data-anim="1">
-                <h2>Baccalauréat Pro SEN</h2>
+                <h2>BAC Pro SEN</h2>
                 <p><strong>Lycée Montésquieu - Sorgues</strong><br />
-                    Système Electronique et Numérique. Obtenu avec montion Assez Bien
+                    Système Electronique et Numérique.
                 </p>
                 <a class="btn">2015 - 2017</a>
             </div>
