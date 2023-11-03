@@ -4,10 +4,12 @@
 
 /*************Variable Couleur**************/
 :root {
-    --clr-first: #54468f;/*#96B6C5;*/
+    --clr-first: #54468f;
+    /*#96B6C5;*/
     --clr-second: #DDE6ED;
-    --clr-police: #E5E4E9;/*#27374D;*/
-    --clr-background: #ADC4CE;
+    --clr-police: #E5E4E9;
+    /*#27374D;*/
+    --clr-background: #455A64;
     /*--clr-nouveau: rgba(0, 0, 0, 0.65);*/
     --container-width: 1000px;
     --container-padding: 20px;
@@ -183,8 +185,10 @@ html {
 }
 
 body {
-    font-family: 'Poppins', arial; /*'Noto Sans Rejang'*/
-    background: linear-gradient(to left top, #031A9A, #8B53FF);/*var(--clr-background);*/
+    font-family: 'Poppins', arial;
+    /*'Noto Sans Rejang'*/
+    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    /*var(--clr-background);*/
     color: var(--clr-police);
     height: 100%;
 }
@@ -356,51 +360,119 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius:var(--border-radius);
+    border-radius: var(--border-radius);
     margin: 15px;
 }
 
+#CV:hover{
+    color : var(--clr-first);
+}
 #CV:hover::before {
     top: 0px;
     border-radius: 0;
 }
 
-#Client-Leger {
+/*Connaissance*/
+#connaissance {
     display: flex;
-    flex-direction: row;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .vision-board {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.vision-board, .img) {
+    display: flex;
     justify-content: center;
     align-items: center;
-    /*transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-    transform-style: preserve-3d;*/
-}
-
-.langage {
-    border: 1px solid var(--clr-second);
-    background-color: var(--clr-second);
-    border-radius: var(--border-radius);
-    display: flex;
+  }
+  .carousel .vision-board {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
     flex-direction: column;
-    align-items: center;
-    padding: 34px 30px;
-    margin: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    /*box-shadow: 0 32px 30px var(--clr-second);*/
-}
-
-.langage:hover {
-    transform: translateY(-10px);
-    border-color: var(--clr-police);
-    background-color: var(--clr-police);
-    color: var(--clr-second);
-}
-
-.langage>img {
-    width: 100px;
-    height: 100px;
-}
+    border-radius: 1.5rem;
+  }
+  .carousel .vision-board .img {
+    background: white;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .vision-board .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .vision-board h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    color: var(--clr-background);
+  }
+  .carousel .vision-board span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
 
 /* formation */
 #formation h1 {
@@ -463,7 +535,7 @@ nav {
     width: 400px;
     min-height: 200px;
     padding: 20px;
-    border-radius:var(--border-radius);
+    border-radius: var(--border-radius);
     height: auto;
     background: whitesmoke;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -500,11 +572,11 @@ nav {
 
 .btn {
     display: block;
-    background: var(--clr-police);
+    background: var(--clr-background);
     padding: 10px;
     width: 120px;
     text-align: center;
-    color: #f1f1f1;
+    color: var(--clr-police);
     text-decoration: none;
     border-radius: var(--border-radius);
     margin-top: 10px;
@@ -530,8 +602,10 @@ nav {
 }
 
 #arrow {
-    color: var(--clr-first);/*--clr-second*/
-    background-color: var(--clr-second);/*--clr-police*/
+    color: var(--clr-first);
+    /*--clr-second*/
+    background-color: var(--clr-second);
+    /*--clr-police*/
     padding: 20px;
     border-radius: var(--border-radius);
 
@@ -539,7 +613,7 @@ nav {
 }
 
 #arrow:hover {
-
+    color:var(--clr-police);
     background-color: var(--clr-first);
     border-radius: var(--border-radius);
     transform: rotate(360deg);
@@ -593,7 +667,7 @@ textarea {
     margin-bottom: 50px;
     padding: 10px 20px;
     border: none;
-    border-radius:var(--border-radius);
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 
@@ -669,7 +743,7 @@ textarea {
     background-color: white;
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius:var(--border-radius);
+    border-radius: var(--border-radius);
     position: absolute;
     bottom: -9rem;
     left: 0;
@@ -835,7 +909,7 @@ textarea {
         display: flex;
         align-items: center;
         position: relative;
-        background-color: var(--clr-background);
+        background-color: #8852FD;/*var(--clr-background);*/
     }
 
     .hamburger span {
@@ -879,7 +953,7 @@ textarea {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        background: var(--clr-second);
+        background: var(--clr-police);
         top: 100%;
         left: 0;
         transform: translate(-100%);
@@ -894,6 +968,7 @@ textarea {
     }
 
     .navlinks-container a {
+        color: var(--clr-background);
         font-size: 18px;
         margin: 10px 0px;
     }
@@ -951,7 +1026,7 @@ textarea {
         left: calc(50%);
     }
 
-    .cards{
+    .cards {
         margin-bottom: 50px;
     }
 }

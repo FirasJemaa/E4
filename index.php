@@ -115,62 +115,86 @@ function test_input($data)
     <!--Section Connaissance-->
     <section id="connaissance" class="column container">
         <h1 class="soulignage reveal">Connaissances</h1>
-        <h2 class="soulignage">Client-Leger</h2>
-
-        <div id="Client-Leger">
-            <div class="langage">
-                <img src="images/html.png" alt="html">
-                <h3>HTML</h3>
-            </div>
-            <div class="langage">
-                <img src="images/CSS.png" alt="css">
-                <h3>CSS</h3>
-            </div>
-            <div class="langage">
-                <img src="images/sass.png" alt="cass">
-                <h3>SASS</h3>
-            </div>
-            <div class="langage">
-                <img src="images/js.png" alt="javascript">
-                <h3>Javascript</h3>
-            </div>
-            <div class="langage">
-                <img src="images/php.png" alt="php">
-                <h3>PHP</h3>
-            </div>
-            <div class="langage"><img src="images/jQuery.png" alt="sQuery">
-                <h3>jQuery</h3>
-            </div>
-        </div>
-
-        <h2 class="soulignage">Client-Lourd</h2>
-
-        <div id="Client-Leger">
-            <div class="langage">
-                <img src="images/python.png" alt="html">
-                <h3>Python</h3>
-            </div>
-            <div class="langage">
-                <img src="images/C.png" alt="css">
-                <h3>C#</h3>
-            </div>
-            <div class="langage">
-                <img src="images/pcsoft.svg" alt="pcsoft">
-                <h3>PC Soft</h3>
-            </div>
-        </div>
-
-        <h2 class="soulignage">Autre</h2>
-
-        <div id="Client-Leger">
-            <div class="langage">
-                <img src="images/sql.png" alt="html">
-                <h3>SQL</h3>
-            </div>
-            <div class="langage">
-                <img src="images/api.png" alt="css">
-                <h3>API</h3>
-            </div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="vision-board">
+                    <div class="img"><img src="images/html.png" alt="html" draggable="false"></div>
+                    <h2>HTML</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/css.png" alt="css" draggable="false"></div>
+                    <h2>CSS</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/js.png" alt="js" draggable="false"></div>
+                    <h2>JAVASCRIPT</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/php.png" alt="php" draggable="false"></div>
+                    <h2>PHP</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/jquery.png" alt="jquery" draggable="false"></div>
+                    <h2>JQUERY</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/sass.png" alt="sass" draggable="false"></div>
+                    <h2>SASS</h2>
+                    <span>Client léger</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/python.png" alt="python" draggable="false"></div>
+                    <h2>PYTHON</h2>
+                    <span>Client lourd</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/C.png" alt="C#" draggable="false"></div>
+                    <h2>C#</h2>
+                    <span>Client lourd</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/pcsoft.svg" alt="pcsoft" draggable="false"></div>
+                    <h2>PCSOFT</h2>
+                    <span>Client lourd</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/react.png" alt="react" draggable="false"></div>
+                    <h2>REACT</h2>
+                    <span>Framework</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/laravel.png" alt="laravel" draggable="false"></div>
+                    <h2>LARAVEL</h2>
+                    <span>Framework</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/api.png" alt="api" draggable="false"></div>
+                    <h2>API</h2>
+                    <span>Autre</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/git.png" alt="git" draggable="false"></div>
+                    <h2>GIT</h2>
+                    <span>Autre</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/sage.png" alt="sage" draggable="false"></div>
+                    <h2>SAGE</h2>
+                    <span>Logiciel de gestion</span>
+                </li>
+                <li class="vision-board">
+                    <div class="img"><img src="images/sql.png" alt="sql" draggable="false"></div>
+                    <h2>SQL</h2>
+                    <span>SQLite, sqlServer, MySQL</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
 
     </section>
@@ -227,15 +251,15 @@ function test_input($data)
         <div class="row">
             <img class="svg-small" src="images/entreprise.svg" alt="cpa">
             <p id="style_Text_Entreprise">
-                <span>CpaGestion</span> est une entreprise qui vends des logiciels de gestion interfacé en temps réel avec Sage (progiciel de gestion intégré). 
+                <span>CpaGestion</span> est une entreprise qui vends des logiciels de gestion interfacé en temps réel avec Sage (progiciel de gestion intégré).
                 A partir d'un cachier des charges, nous devons créer un logiciel fait sur mesure pour chaque client. <span>CpaGestion</span> m'a permit de comprendre
                 en tant que développeur je serais pas limité à l'informatique, chez <span>CpaGestion</span> nous devons connaître chaque coeur de métier qu'on rencontre.
                 Collaborer à l'élaboration de nouveaux projets et communiquer au sein de l'équipe pour garantir un bon partage d'informations.
             </p>
         </div>
     </section>
-     <!--Projet-->
-     <div class="cards">
+    <!--Projet-->
+    <div class="cards">
         <h1 class="soulignage reveal">Formation</h1>
         <div class="card__container">
 
