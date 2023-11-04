@@ -347,7 +347,7 @@ nav {
 #CV {
     width: 200px;
     height: 60px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: arial, sans-serif;
     font-weight: 700;
     position: relative;
@@ -362,10 +362,11 @@ nav {
     justify-content: center;
     border-radius: var(--border-radius);
     margin: 15px;
+    transition: all 0.2s ease-out;
 }
 
 #CV:hover{
-    color : var(--clr-first);
+    color : var(--clr-background);
 }
 #CV:hover::before {
     top: 0px;
@@ -637,7 +638,7 @@ iframe {
 #Contact {
     padding: 30px;
     border-radius: var(--border-radius);
-    background-color: var(--clr-first);
+    /*background-color: var(--clr-first);*/
 }
 
 form {
@@ -663,7 +664,7 @@ textarea {
 
 #Contact input[type="submit"] {
     background-color: var(--clr-police);
-    color: #fff;
+    /*color: #fff;*/
     margin-bottom: 50px;
     padding: 10px 20px;
     border: none;

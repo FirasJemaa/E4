@@ -332,13 +332,13 @@ function test_input($data)
                 <h2 class="soulignage">Contactez-moi !</h2>
                 <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required><br><br>
+                    <input type="text" id="nom" name="nom" required><br>
 
                     <label for="email">E-mail :</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" required><br>
 
                     <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
 
                     <input id="CV" type="submit" name="submit" value="Envoyer">
                 </form>
