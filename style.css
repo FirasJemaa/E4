@@ -659,9 +659,10 @@ form {
     margin: 0 auto;
 }
 
-label {
+form label {
     display: block;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 input[type="text"],
