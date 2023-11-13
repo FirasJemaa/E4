@@ -331,7 +331,7 @@ nav {
     justify-content: center;
 }
 
-#CV::before {
+#CV::before, #submit::before {
     content: '';
     position: absolute;
     top: 60px;
@@ -344,7 +344,7 @@ nav {
     transition: all .5s;
 }
 
-#CV {
+#CV, #submit {
     width: 200px;
     height: 60px;
     font-size: 1.2rem;
@@ -365,10 +365,19 @@ nav {
     transition: all 0.2s ease-out;
 }
 
-#CV:hover{
-    color : var(--clr-background);
+#submit{
+    color: var(--clr-background);
 }
-#CV:hover::before {
+
+#CV:hover{
+    color : var(--clr-first);
+}
+
+#submit:hover{
+    color : var(--clr-police);
+}
+
+#CV:hover::before, #submit:hover::before {
     top: 0px;
     border-radius: 0;
 }
@@ -380,6 +389,10 @@ nav {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+#left, #right{
+    color : var(--clr-first);
 }
 
 .wrapper {

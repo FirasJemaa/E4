@@ -294,7 +294,7 @@ function test_input($data)
             </article>
 
             <article class="card__article">
-                <img src="./images/landscape-4.jpg" alt="image" class="card__img">
+                <img src="./images/landscape-4.png" alt="image" class="card__img">
 
                 <div class="card__data">
                     <span class="card__description">CPA Gestion</span>
@@ -304,7 +304,7 @@ function test_input($data)
             </article>
 
             <article class="card__article">
-                <img src="./images/landscape-5.jpg" alt="image" class="card__img">
+                <img src="./images/landscape-5.png" alt="image" class="card__img">
 
                 <div class="card__data">
                     <span class="card__description">Projet personnel</span>
@@ -340,7 +340,7 @@ function test_input($data)
                     <label for="message">Message :</label>
                     <textarea id="message" name="message" rows="4" required></textarea><br>
 
-                    <input id="CV" type="submit" name="submit" value="Envoyer">
+                    <input id="submit" type="submit" name="submit" value="Envoyer">
                 </form>
 
                 <p><span class="erreur"><?php echo $erreur; ?></span></p>
