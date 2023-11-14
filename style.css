@@ -103,6 +103,24 @@
     }
 }
 
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-165px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(-165px)rotate(-360deg);
+    }
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-165px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(-165px) rotate(-360deg);
+    } 
+}
+
 .animated-Bottom {
     animation: fadeInBottom 1s ease-in-out;
     /* Nom de l'animation, durée, ralentissement */
@@ -302,6 +320,71 @@ nav {
     width: 600px;
     height: 600px;
     margin: 10px;
+}
+
+#moi{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.lol{
+    width: 330px;
+    height: 330px;
+    border: 1px solid #ffffff55 ;
+    background-image: url(pp.png);
+    background-size: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#c1{
+    width: 15px;
+    height: 15px;
+    background: white;
+    -webkit-animation: circle1 9s linear infinite;
+    animation: circle 9s linear infinite;
+}
+
+#c2{
+    width: 30px;
+    height: 30px;
+    background: white;
+    -webkit-animation: circle 15s linear infinite;
+    animation: circle 15s linear infinite;
+}
+
+#c3{
+    width: 20px;
+    height: 20px;
+    background: white;
+    -webkit-animation: circle 4s linear infinite;
+    animation: circle 4s linear infinite;
+}
+
+#c4{
+    width: 10px;
+    height: 10px;
+    background: white;
+    -webkit-animation: circle 20s linear infinite;
+    animation: circle 20s linear infinite;
 }
 
 .svg-small {
