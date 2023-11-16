@@ -214,7 +214,7 @@ section {
 h1 {
     font-size: 50px;
     padding: 50px;
-    margin-bottom: 50px;
+    
     margin-top: 100px;
     font-weight: 100%;
 }
@@ -1143,6 +1143,18 @@ textarea {
     h1 {
         font-size: 35px;        
     }
+    .box{
+        width: 300px;
+        min-height: 70px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
 
     #style_Text_Entreprise{
         width: 300px;
@@ -1152,6 +1164,15 @@ textarea {
         width: 300px;
         height: 300px;
         margin: 6px;
+    }
+
+    .lol{
+        margin-top: 30px;
+    }
+
+    #moi{
+        margin-top : 2.5rem;
+        margin-bottom : 2.5rem;
     }
 }
 
