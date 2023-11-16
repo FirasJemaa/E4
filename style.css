@@ -1,12 +1,11 @@
-/*************Police************************
-@import url('https://fonts.cdnfonts.com/css/noto-sans-rejang');*/
+/*************Police*************************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*************Variable Couleur**************/
 :root {
     --clr-first: #54468f;
     /*#96B6C5;*/
-    --clr-second: #DDE6ED;
+    --clr-second: #8EA996;
     --clr-police: #E5E4E9;
     /*#27374D;*/
     --clr-background: #455A64;
@@ -34,7 +33,7 @@
 
 /* Poignée de la barre de défilement */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--clr-second);
+    background-color: var(--clr-police);
     /* Couleur secondaire de la poignée */
     border-radius: 5px;
     /* Arrondi des coins de la poignée */
@@ -171,7 +170,7 @@
     width: 100%;
     height: 3px;
     /* Ajustez la valeur pour définir l'épaisseur du soulignage */
-    background-color: var(--clr-second);
+    background-color: var(--clr-police);
     /* Couleur du soulignage */
     transform: scaleX(0);
     /* L'animation commence avec une largeur de 0 */
@@ -421,7 +420,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-second);
+    background: var(--clr-police);
     border-radius: var(--border-radius);
     z-index: -1;
     transition: all .5s;
@@ -700,9 +699,7 @@ nav {
 
 #arrow {
     color: var(--clr-first);
-    /*--clr-second*/
-    background-color: var(--clr-second);
-    /*--clr-police*/
+    background-color: var(--clr-police);
     padding: 20px;
     border-radius: var(--border-radius);
 
@@ -722,7 +719,7 @@ nav {
 }
 
 #style_Text_Entreprise>span {
-    color: #E06351;
+    color: var(--clr-second);
 }
 
 /* Contact */
@@ -1057,7 +1054,7 @@ textarea {
         transform: translate(-100%);
         height: 100vh;
         padding: 15px 50px 15px 20px;
-        border-right: 1px solid var(--clr-second);
+        border-right: 1px solid var(--clr-police);
         /*ligne horizontal*/
     }
 
