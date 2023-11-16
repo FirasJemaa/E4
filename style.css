@@ -4,12 +4,9 @@
 /*************Variable Couleur**************/
 :root {
     --clr-first: #54468f;
-    /*#96B6C5;*/
     --clr-second: #8EA996;
     --clr-police: #E5E4E9;
-    /*#27374D;*/
     --clr-background: #455A64;
-    /*--clr-nouveau: rgba(0, 0, 0, 0.65);*/
     --container-width: 1000px;
     --container-padding: 20px;
     --border-radius: 1.5rem;
@@ -203,9 +200,7 @@ html {
 
 body {
     font-family: 'Poppins', arial;
-    /*'Noto Sans Rejang'*/
     background: linear-gradient(to left top, #031A9A, #8B53FF);
-    /*var(--clr-background);*/
     color: var(--clr-police);
     height: 100%;
 }
@@ -1123,6 +1118,11 @@ textarea {
 
     .cards {
         margin-bottom: 50px;
+    }
+
+    iframe {
+        width : 300px;
+        height: 300px;
     }
 }
 
