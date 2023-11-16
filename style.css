@@ -564,6 +564,7 @@ nav {
     font-size: 1.56rem;
     margin: 30px 0 5px;
     color: var(--clr-background);
+    z-index: 0;
   }
   .carousel .vision-board span {
     color: #6A6D78;
