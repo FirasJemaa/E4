@@ -242,3 +242,13 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+/* when user click "voir plus" */
+const BTNVoirPlus = document.querySelectorAll(".card__button");
+
+BTNVoirPlus.forEach(button => {
+  button.addEventListener('click', () => {
+      alert("Cette fonctionnalité est en cours de développement");
+  });
+});
