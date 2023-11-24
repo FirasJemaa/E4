@@ -1,0 +1,227 @@
+/*************Police*************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*************Variable Couleur**************/
+:root {
+    --clr-first: #54468f;
+    --clr-second: #8EA996;
+    --clr-police: #E5E4E9;
+    --clr-background: #455A64;
+    --container-width: 1000px;
+    --container-padding: 20px;
+    --border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 1120px) {
+    :root {
+        --h2-font-size: 1.5rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/*************Barre de scroll**************/
+/* Barre de défilement principale */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largeur de la barre de défilement */
+    background-color: var(--clr-first);
+    /* Couleur principale de la barre de défilement */
+}
+
+/* Poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-police);
+    /* Couleur secondaire de la poignée */
+    border-radius: 5px;
+    /* Arrondi des coins de la poignée */
+}
+
+/* Piste de la barre de défilement */
+::-webkit-scrollbar-track {
+    background-color: var(--clr-first);
+    /* Couleur principale de la piste */
+}
+
+/****************Animations******************/
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Déplacer vers le bas au départ */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Revenir à la position initiale */
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        /* Déplacer vers le bas au départ */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Revenir à la position initiale */
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+        /* Déplacer vers le bas au départ */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Revenir à la position initiale */
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+        /* Déplacer vers le bas au départ */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Revenir à la position initiale */
+    }
+}
+
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-165px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(-165px)rotate(-360deg);
+    }
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-165px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(-165px) rotate(-360deg);
+    } 
+}
+
+.animated-Bottom {
+    animation: fadeInBottom 1s ease-in-out;
+    /* Nom de l'animation, durée, ralentissement */
+}
+
+.animated-Top {
+    animation: fadeInTop 1s ease-in-out;
+    /* Nom de l'animation, durée, ralentissement */
+}
+
+.animated-Right {
+    animation: fadeInRight 1s ease-in-out;
+    /* Nom de l'animation, durée, ralentissement */
+}
+
+.animated-Left {
+    animation: fadeInLeft 1s ease-in-out;
+    /* Nom de l'animation, durée, ralentissement */
+}
+
+/**********container**************/
+.container {
+    width: calc(100% - var(--container-padding)*2);
+    box-sizing: border-box;
+    max-width: calc(var(--container-width) - var(--container-padding)*2);
+    margin: 0px auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/**************souligage************/
+
+.soulignage {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    /* Couleur du texte de base */
+}
+
+.soulignage::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Ajustez la valeur pour définir l'épaisseur du soulignage */
+    width: 100%;
+    height: 3px;
+    /* Ajustez la valeur pour définir l'épaisseur du soulignage */
+    background-color: var(--clr-police);
+    /* Couleur du soulignage */
+    transform: scaleX(0);
+    /* L'animation commence avec une largeur de 0 */
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    /* La transition crée l'effet d'animation */
+}
+
+/* Animation du soulignage au survol */
+.soulignage:hover::after {
+    transform: scaleX(1);
+    /* Le soulignage s'élargit jusqu'à la largeur du texte */
+}
+
+/********header*******************/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Ajoute une animation de défilement fluide */
+}
+
+body {
+    font-family: 'Poppins', arial;
+    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    color: var(--clr-police);
+    height: 100%;
+}
+
+header,
+section {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 50px;
+    
+    margin-top: 100px;
+    font-weight: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    z-index: -1;
+}
