@@ -9,13 +9,24 @@ document.getElementById('prev').onclick = function () {
   let lists = document.querySelectorAll('.item');
   document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
-
-
-const rssFeedUrl = 'https://www.zdnet.fr/feeds/rss/';
+//https://www.lemondeinformatique.fr/flux-rss/
+//https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml
+//https://www.zdnet.fr/feeds/rss/
+const rssFeedUrl = 'https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml';
 let feedContent = document.getElementById("slide");
 
 fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
-  .then(response => response.json())
+  .then(response => {
+    const contentType = response.headers.get('content-type');
+
+    if (contentType && contentType.includes('application/json')) {
+      return response.json(); // La réponse est au format JSON
+    } else if (contentType && contentType.includes('application/xml')) {
+      return response.text(); // La réponse est au format XML
+    } else {
+      throw new Error('Type de contenu non pris en charge');
+    }
+  })
   .then(data => {
     if (data.status === 'ok') {
       const items = data.items;
@@ -51,13 +62,13 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
 
 function handleScreenSizeChange(event) {
   let Images = document.querySelectorAll(".item");
-  
+
   if (event.matches) {
-     
-     Images.forEach(function (element) {
-       element.style.visible = 'none';
-      });
-      console.log("Écran inférieur à 550 pixels");
+
+    Images.forEach(function (element) {
+      element.style.visible = 'none';
+    });
+    console.log("Écran inférieur à 550 pixels");
   } else {
     console.log("Écran supérieur ou égal à 550 pixels");
   }
