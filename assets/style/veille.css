@@ -27,7 +27,7 @@
 .item {
     width: 200px;
     height: 300px;
-    background-position: 50% 50%;
+    /*background-position: 50% 50%;*/
     display: inline-block;
     transition: 0.5s;
     background-size: cover;
@@ -36,7 +36,7 @@
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 20px;
-    box-shadow: 0 15px 25px #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     filter: blur(0px);
 }
 
@@ -114,6 +114,11 @@
     transform: scale(1.1);
 }
 
+#date{
+    font-style: oblique;
+    color: var(--clr-background);
+}
+
 @keyframes showcontent {
     from {
         opacity: 0;
@@ -146,6 +151,14 @@
 
 .buttons button:hover {
     background-color: var(--clr-second);
+}
+
+@media screen and (max-width: 1700px) {
+    .item:nth-child(n+6){
+        visibility: hidden;
+        width:0;
+        height: 0;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -183,8 +196,3 @@
     }
 }
 
-/* @media screen and (max-width: 550px) {
-    .item{
-        background-image: "../images/landscape-1.jpg";
-    }
-} */

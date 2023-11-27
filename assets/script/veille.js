@@ -38,13 +38,16 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
         const date = item.pubDate;
         const description = item.description;
         const link = item.link;
-        const mediaContent = item.enclosure ? `style="background-image: url(${item.enclosure.link});"` : `style="background: black);"`;
-
+        const mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/VeilleImgDefault.jpeg');"`;
+        
         Remplissage += (`
             <div class="item" ${mediaContent}">
                     <div class="content">
                         <div class="name">${title}</div>
-                        <div class="des">${description}</div>
+                        <div class="des">
+                          ${description}<br>
+                          <div id='date'>${date}</div>
+                        </div>
                         <a href="${link}">Voir plus</a>
                     </div>
             </div> `
@@ -59,7 +62,7 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
     console.error('Erreur lors de la requête AJAX.', error);
   });
 
-
+/*
 function handleScreenSizeChange(event) {
   let Images = document.querySelectorAll(".item");
 
@@ -79,4 +82,4 @@ const mediaQuery = window.matchMedia('(max-width: 550px)');
 mediaQuery.addListener(handleScreenSizeChange);
 
 // Appel initial de la fonction pour vérifier la taille de l'écran au chargement de la page
-handleScreenSizeChange(mediaQuery);
+handleScreenSizeChange(mediaQuery);*/
