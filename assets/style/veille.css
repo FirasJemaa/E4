@@ -1,5 +1,19 @@
 @import url(style.css);
 
+#titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h2:hover{
+    color: red;
+}
+
 .Blockchain {
     position:absolute;
     left: 50%;
@@ -15,8 +29,7 @@
 
 
 #Veille{
-    display: flex;
-    
+    width: 100%;
 }
 
 #slide {

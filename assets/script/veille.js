@@ -12,7 +12,7 @@ document.getElementById('prev').onclick = function () {
 //https://www.lemondeinformatique.fr/flux-rss/
 //https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml
 //https://www.zdnet.fr/feeds/rss/
-const rssFeedUrl = 'https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml';
+const rssFeedUrl = 'https://www.zdnet.fr/feeds/rss/';
 let feedContent = document.getElementById("slide");
 
 fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
