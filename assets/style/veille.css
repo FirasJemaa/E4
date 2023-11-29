@@ -1,17 +1,23 @@
 @import url(style.css);
 
-#titre{
+nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 5px;
 }
 
 h2{
-    text-decoration: underline;
+    z-index: 0;
+    cursor: pointer;
 }
 
-h2:hover{
-    color: red;
+h2:active{
+    color:var(--clr-second);
+}
+
+#activeTitre{
+    color:var(--clr-second);
 }
 
 .Blockchain {
@@ -28,9 +34,9 @@ h2:hover{
 }
 
 
-#Veille{
+/* #Veille{
     width: 100%;
-}
+} */
 
 #slide {
     width: max-content;
@@ -190,6 +196,7 @@ h2:hover{
     .item .content {
         left: 50%;
         top :50%;
+        /* width: auto; */
         transform: translate(-50%,-50%);
     }
     .buttons{
@@ -207,5 +214,19 @@ h2:hover{
         height: 95%;
         width: 99%;
     }
+
+    h2{
+        font-size: 30px;
+    }
 }
 
+
+@media screen and (max-width: 1024px) {
+    h2{
+        font-size: 20px;
+    }
+
+    .item .name{
+        font-size: 25px;
+    }
+}
