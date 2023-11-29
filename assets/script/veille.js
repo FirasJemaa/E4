@@ -28,9 +28,9 @@ document.getElementById('prev').onclick = function () {
 function AffichageRSS() {
   const Titre = document.getElementById("activeTitre");
   let rssFeedUrl = "";
-
+// 'https://www.zdnet.fr/blogs/cloud-news/rss/'
   if (Titre.innerText === "Blockchain"){
-    rssFeedUrl = 'https://www.zdnet.fr/feeds/rss/';
+    rssFeedUrl = 'https://blockchainfrance.net/feed/';
   }else{
     rssFeedUrl = 'https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml';
   }
@@ -86,24 +86,3 @@ function AffichageRSS() {
 }
 
 AffichageRSS();
-/*
-function handleScreenSizeChange(event) {
-  let Images = document.querySelectorAll(".item");
-
-  if (event.matches) {
-
-    Images.forEach(function (element) {
-      element.style.visible = 'none';
-    });
-    console.log("Écran inférieur à 550 pixels");
-  } else {
-    console.log("Écran supérieur ou égal à 550 pixels");
-  }
-}
-
-// Ajouter un écouteur d'événements pour détecter les changements de taille d'écran
-const mediaQuery = window.matchMedia('(max-width: 550px)');
-mediaQuery.addListener(handleScreenSizeChange);
-
-// Appel initial de la fonction pour vérifier la taille de l'écran au chargement de la page
-handleScreenSizeChange(mediaQuery);*/
