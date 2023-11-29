@@ -70,7 +70,7 @@ function AffichageRSS() {
                           ${description}<br>
                           <div id='date'>${date}</div>
                         </div>
-                        <a href="${link}">Voir plus</a>
+                        <a href="${link}" target="_blank">Voir plus</a>
                     </div>
             </div> `
           );
