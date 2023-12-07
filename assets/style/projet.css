@@ -16,7 +16,22 @@ img {
     max-width: 900px;
 }
 
+p{
+    text-align: justify;
+}
+
 ul{
     padding: 10px 30px;
 }
 
+@media screen and (max-width: 1020px) {
+    img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        max-width: 300px;
+    }
+}

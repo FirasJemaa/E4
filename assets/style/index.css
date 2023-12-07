@@ -48,8 +48,8 @@ nav {
     position: relative;
 }
 
-.open{
-    position :absolute;
+.open {
+    position: absolute;
 }
 
 .nav-authentication {
@@ -95,12 +95,12 @@ nav {
     margin: 10px;
 }
 
-#moi{
+#moi {
     margin-top: 11rem;
     margin-bottom: 13rem;
 }
 
-#moi > div:first-child{
+#moi>div:first-child {
     margin-right: 70px;
 }
 
@@ -108,10 +108,10 @@ nav {
     text-align: justify;
 }
 
-.lol{
+.lol {
     width: 330px;
     height: 330px;
-    border: 1px solid #ffffff55 ;
+    border: 1px solid #ffffff55;
     background-image: url(pp.png);
     background-size: cover;
     position: relative;
@@ -124,7 +124,7 @@ nav {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-.circle{
+.circle {
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -136,7 +136,7 @@ nav {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-#c1{
+#c1 {
     width: 15px;
     height: 15px;
     background: white;
@@ -144,7 +144,7 @@ nav {
     animation: circle 9s linear infinite;
 }
 
-#c2{
+#c2 {
     width: 30px;
     height: 30px;
     background: white;
@@ -152,7 +152,7 @@ nav {
     animation: circle 15s linear infinite;
 }
 
-#c3{
+#c3 {
     width: 20px;
     height: 20px;
     background: white;
@@ -160,7 +160,7 @@ nav {
     animation: circle 4s linear infinite;
 }
 
-#c4{
+#c4 {
     width: 10px;
     height: 10px;
     background: white;
@@ -205,7 +205,8 @@ nav {
     justify-content: center;
 }
 
-#CV::before, #submit::before {
+#CV::before,
+#submit::before {
     content: '';
     position: absolute;
     top: 60px;
@@ -218,7 +219,8 @@ nav {
     transition: all .5s;
 }
 
-#CV, #submit {
+#CV,
+#submit {
     width: 200px;
     height: 60px;
     font-size: 1.2rem;
@@ -239,20 +241,21 @@ nav {
     transition: all 0.2s ease-out;
 }
 
-#submit{
+#submit {
     color: var(--clr-background);
     margin: 15px auto;
 }
 
-#CV:hover{
-    color : var(--clr-first);
+#CV:hover {
+    color: var(--clr-first);
 }
 
-#submit:hover{
-    color : var(--clr-police);
+#submit:hover {
+    color: var(--clr-police);
 }
 
-#CV:hover::before, #submit:hover::before {
+#CV:hover::before,
+#submit:hover::before {
     top: 0px;
     border-radius: 0;
 }
@@ -266,16 +269,18 @@ nav {
     min-height: 100vh;
 }
 
-#left, #right{
-    color : var(--clr-first);
+#left,
+#right {
+    color: var(--clr-first);
 }
 
 .wrapper {
     max-width: 1100px;
     width: 100%;
     position: relative;
-  }
-  .wrapper i {
+}
+
+.wrapper i {
     top: 50%;
     height: 50px;
     width: 50px;
@@ -286,20 +291,24 @@ nav {
     line-height: 50px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
-  }
-  .wrapper i:active{
+}
+
+.wrapper i:active {
     transform: translateY(-50%) scale(0.85);
-  }
-  .wrapper i:first-child{
+}
+
+.wrapper i:first-child {
     left: -22px;
-  }
-  .wrapper i:last-child{
+}
+
+.wrapper i:last-child {
     right: -22px;
-  }
-  .wrapper .carousel{
+}
+
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -309,27 +318,33 @@ nav {
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
-  }
-  .carousel::-webkit-scrollbar {
+}
+
+.carousel::-webkit-scrollbar {
     display: none;
-  }
-  .carousel.no-transition {
+}
+
+.carousel.no-transition {
     scroll-behavior: auto;
-  }
-  .carousel.dragging {
+}
+
+.carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
-  }
-  .carousel.dragging .vision-board {
+}
+
+.carousel.dragging .vision-board {
     cursor: grab;
     user-select: none;
-  }
-  .carousel :where(.vision-board, .img) {
+}
+
+.carousel :where(.vision-board, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .carousel .vision-board {
+}
+
+.carousel .vision-board {
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
@@ -338,31 +353,35 @@ nav {
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 1.5rem;
-  }
-  .carousel .vision-board .img {
+}
+
+.carousel .vision-board .img {
     background: white;
     height: 148px;
     width: 148px;
     border-radius: 50%;
-  }
-  .vision-board .img img {
+}
+
+.vision-board .img img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
-  }
-  .carousel .vision-board h2 {
+}
+
+.carousel .vision-board h2 {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
     color: var(--clr-background);
     z-index: 0;
-  }
-  .carousel .vision-board span {
+}
+
+.carousel .vision-board span {
     color: #6A6D78;
     font-size: 1.31rem;
-  }
+}
 
 /* formation */
 #formation h1 {
@@ -501,7 +520,7 @@ nav {
 }
 
 #arrow:hover {
-    color:var(--clr-police);
+    color: var(--clr-police);
     background-color: var(--clr-first);
     border-radius: var(--border-radius);
     transform: rotate(360deg);
@@ -774,9 +793,10 @@ textarea {
 }
 
 @media (max-width: 900px) {
-    #moi > div:first-child{
+    #moi>div:first-child {
         margin-right: 0px;
     }
+
     nav {
         padding: 15px 20px;
         position: relative;
@@ -806,7 +826,8 @@ textarea {
         display: flex;
         align-items: center;
         position: relative;
-        background-color: #8852FD;/*var(--clr-background);*/
+        background-color: #8852FD;
+        /*var(--clr-background);*/
     }
 
     .hamburger span {
@@ -928,7 +949,7 @@ textarea {
     }
 
     iframe {
-        width : 300px;
+        width: 300px;
         height: 300px;
     }
 }
@@ -943,9 +964,10 @@ textarea {
     }
 
     h1 {
-        font-size: 35px;        
+        font-size: 35px;
     }
-    .box{
+
+    .box {
         width: 300px;
         min-height: 70px;
     }
@@ -958,7 +980,7 @@ textarea {
         font-size: 15px;
     }
 
-    #style_Text_Entreprise{
+    #style_Text_Entreprise {
         width: 300px;
     }
 
@@ -968,24 +990,24 @@ textarea {
         margin: 6px;
     }
 
-    .lol{
+    .lol {
         margin-top: 30px;
     }
 
-    #moi{
-        margin-top : 2.5rem;
-        margin-bottom : 2.5rem;
+    #moi {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 }
 
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: calc((100% / 2) - 9px);
     }
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     .wrapper .carousel {
-      grid-auto-columns: 100%;
+        grid-auto-columns: 100%;
     }
-  }
+}
