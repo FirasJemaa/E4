@@ -155,6 +155,7 @@
     cursor: pointer;
     position: relative;
     text-decoration: none;
+    margin-bottom: 15px;
     /* Couleur du texte de base */
 }
 

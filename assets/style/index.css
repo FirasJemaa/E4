@@ -387,8 +387,8 @@ nav {
 #formation h1 {
     text-align: center;
     padding: 240px 0 10px 0;
-    /*color:#f1f1f1;
-    font-size: 60px;*/
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .box-timeline {
@@ -985,6 +985,10 @@ footer a{
 
     h1 {
         font-size: 35px;
+    }
+
+    #formation h1 {
+        max-width: 200px;
     }
 
     .box {
