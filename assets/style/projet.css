@@ -20,7 +20,7 @@ p{
     text-align: justify;
 }
 
-ul{
+ul, ol{
     padding: 10px 30px;
 }
 

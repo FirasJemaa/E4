@@ -709,6 +709,26 @@ textarea {
 .card__article:not(:hover) .card__data {
     animation: remove-data 1s forwards;
 }
+/*Footer*/
+footer{
+    background-color: var(--clr-police);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-background);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer a{
+    color: var(--clr-first);
+    text-decoration: none;
+}
 
 /* Card animation */
 @keyframes show-data {
