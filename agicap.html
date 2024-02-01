@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/FJ.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/FJ.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/projet.css" />
+    <title>Projet Agicap</title>
+</head>
+
+<body>
+    <h1 class="animated-Left soulignage">Agicap</h1>
+    <section class="container">
+        <h2 class="animated-Bottom">Présentation de l'entreprise</h2>
+        <p>
+            Agicap est une entreprise qui a été créée en 2016 par trois associés. Elle est spécialisée dans la gestion de trésorerie pour les entreprises. Elle propose une solution SaaS (Software as a Service) qui permet aux entreprises de gérer leur trésorerie en temps réel. Elle est basée à Lyon et compte aujourd'hui plus de 100 collaborateurs.
+        </p>
+    </section>
+
+    <section class="container">
+        <h2 class="animated-Bottom">Objectif</h2>
+        <p>
+            L'objectif est de créer un logiciel qui permet au client de AGICAP de pouvoir envoyer des fichiers des écritures comptables par SFTP (Secure File Transfer Protocol) et de pouvoir les exporter dans la base de données de AGICAP. Mais également en local, le fichier est en format XLSX (Excel). Pour finir créer un planificateur de tâches qui permet d'automatiser l'envoi des fichiers tous les jours à 22h.
+        </p>
+        <ul>
+            <li>Création du fichier Excel</li>
+            <li>Enregister le fichier en local et l'envoyer sur le serveur en SFTP</li>
+            <li>Planifier une tâche automatiser</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2 class="animated-Bottom">Création du fichier Excel</h2>
+        <p>La première fenêtre permet à l'utilisateur de saisir des dates, puis la table sera automatiquement remplie avec le contenu des écritures comptables comprises entre ces deux dates.</p>
+        <img src="assets/images/Projet-BTS/agicap1.png" alt="Liste">
+    </section>
+    <section class="container">
+        <h2 class="animated-Bottom">Enregister le fichier</h2>
+        <p>
+            Le bouton suivant permettra de convertir la table affichée en fonction des paramètres en un fichier Excel, qui sera ensuite envoyé via SFTP
+        </p>
+        <img src="assets/images/Projet-BTS/agicap2.png" alt="Bouton SFTP">
+        <p>Une fenêtre intitulée "Paramètres" offre la possibilité à l'utilisateur d'enregistrer les configurations pour sauvegarder sur le serveur et déterminer le lieu d'enregistrement en local.</p>
+        <img src="assets/images/Projet-BTS/agicap3.png" alt="paramètre">
+        <p>Le bouton "Tester" a pour fonction de vérifier la connexion au serveur. Il affiche un message indiquant que la connexion a réussi, ou signale un problème si les paramètres fournis sont incorrects.</p>
+    </section>
+    <section class="container">
+        <h2 class="animated-Bottom">Planifier une tâche automatiser</h2>
+        <p>À partir de là, j'utilise le planificateur de tâches de Windows et j'insère un argument clé qui informe l'application qu'il s'agit d'une tâche autonome. En ce qui concerne la date, j'utilise une valeur correspondant à trois mois en arrière à partir de la date actuelle.</p>
+        <img src="assets/images/Projet-BTS/agicap4.png" alt="Liste">
+    </section>
+</body>
+
+</html>
