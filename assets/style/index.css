@@ -1,4 +1,8 @@
 @import url(style.css);
+header, section{
+    min-height: 100vh;
+}
+
 nav {
     position: relative;
     width: 100%;
@@ -526,6 +530,10 @@ nav {
 }
 
 /* Entreprise  */
+#entreprise > div{
+    margin-bottom: 20%;
+}
+
 #style_Text_Entreprise {
     text-align: justify;
 }
