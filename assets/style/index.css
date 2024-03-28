@@ -542,6 +542,32 @@ nav {
     color: var(--clr-second);
 }
 
+#Continuer{
+    text-decoration: none;
+    color: var(--clr-first);
+    background-color: var(--clr-police);
+    padding: 3px 15px 3px 25px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+    transition: ease-in-out 0.3s;
+}
+#Continuer i{
+    transition: ease-in-out 0.3s;
+    /*reduire la taille*/
+    font-size: 0.8rem;
+}
+
+#Continuer:hover i{
+    visibility: visible;
+    /*transition avec décalage vers la droite*/
+    transform: translateX(5px);
+    transition: ease-in-out 0.3s;
+}
+#Continuer:hover{
+    background-color: var(--clr-first);
+    color: var(--clr-police);
+}
+
 /* Contact */
 iframe {
     border-radius: var(--border-radius);
