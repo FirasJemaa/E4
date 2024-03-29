@@ -60,7 +60,12 @@ function AffichageRSS() {
           const date = item.pubDate;
           const description = item.description;
           const link = item.link;
-          const mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/VeilleImgDefault.jpeg');"`;
+          let mediaContent = "";
+          if (Titre.innerText === "Blockchain"){
+            mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/blockchain.jpg');"`;
+          }else{
+            mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/cloudcomputing.jpeg');"`;
+          }
 
           Remplissage += (`
             <div class="item" ${mediaContent}">
