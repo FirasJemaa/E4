@@ -226,3 +226,30 @@ h2 {
     margin-top: 25px;
     z-index: -1;
 }
+
+/*lien*/
+.LinkBtn{
+    text-decoration: none;
+    color: var(--clr-first);
+    background-color: var(--clr-police);
+    padding: 3px 15px 3px 25px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+    transition: ease-in-out 0.3s;
+}
+.LinkBtn i{
+    transition: ease-in-out 0.3s;
+    /*reduire la taille*/
+    font-size: 0.8rem;
+}
+
+.LinkBtn:hover i{
+    visibility: visible;
+    /*transition avec décalage vers la droite*/
+    transform: translateX(5px);
+    transition: ease-in-out 0.3s;
+}
+.LinkBtn:hover{
+    background-color: var(--clr-first);
+    color: var(--clr-police);
+}
