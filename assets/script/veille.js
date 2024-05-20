@@ -29,8 +29,8 @@ function AffichageRSS() {
   const Titre = document.getElementById("activeTitre");
   let rssFeedUrl = "";
 // 'https://www.zdnet.fr/blogs/cloud-news/rss/'
-  if (Titre.innerText === "Blockchain"){
-    rssFeedUrl = 'https://blockchainfrance.net/feed/';
+  if (Titre.innerText === "Application Métier"){
+    rssFeedUrl = 'https://www.lemondeinformatique.fr/flux-rss/thematique/applications-metiers/rss.xml';
   }else{
     rssFeedUrl = 'https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml';
   }
@@ -61,8 +61,8 @@ function AffichageRSS() {
           const description = item.description;
           const link = item.link;
           let mediaContent = "";
-          if (Titre.innerText === "Blockchain"){
-            mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/blockchain.jpg');"`;
+          if (Titre.innerText === "Application Métier"){
+            mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/Application.jpg');"`;
           }else{
             mediaContent = (item.enclosure.link != undefined) ? `style="background-image: url(${item.enclosure.link});"` : `style="background-image: url('./assets/images/cloudcomputing.jpeg');"`;
           }

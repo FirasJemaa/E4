@@ -20,7 +20,7 @@ h2:active{
     color:var(--clr-second);
 }
 
-.Blockchain {
+.Application {
     position:absolute;
     left: 50%;
     top: 50%;
