@@ -471,11 +471,6 @@ nav {
     left: calc(50% - 270px);
 }
 
-.b4 {
-    top: 1000px;
-    left: calc(50% + 270px);
-}
-
 .box p {
     line-height: 20px;
     font-size: 18px;
@@ -963,11 +958,6 @@ footer a{
 
     .b3 {
         top: 692px;
-        left: calc(50%);
-    }
-
-    .b4 {
-        top: 1000px;
         left: calc(50%);
     }
 
